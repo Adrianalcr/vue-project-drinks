@@ -1,0 +1,41 @@
+@import './base.css';
+
+#app {
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0.2rem;  
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: var(--color-yellow);
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-yellow);
+    background-color: var(--vt-c-white);
+    border-radius: 15px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+    margin: 0;
+  }
+}
+
